@@ -133,7 +133,7 @@ li {
     padding-top: 100px;
     text-align: center;
 }
-#showcase-title {
+#showcase-title, #history-title {
     color: rgb(151, 0, 0); /* Highlight active links with color */
     margin-bottom: 50px;
 }
