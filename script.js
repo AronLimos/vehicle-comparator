@@ -135,6 +135,10 @@ function vehicleShowcase() {
 
     // Real-time Search Filter
     $('#myInput').on('keyup', function () {
+        // Sets the active filter to all cars
+        $('.filterBtn').removeClass('active');
+        $('#filterAll').addClass('active');
+        
         // Get the search term
         let searchTerm = $(this).val().toLowerCase(); // Convert input to lowercase for case-insensitive matching
         filterCars(searchTerm);  // Call the function to filter cars based on the search term
