@@ -138,7 +138,7 @@ function vehicleShowcase() {
         // Sets the active filter to all cars
         $('.filterBtn').removeClass('active');
         $('#filterAll').addClass('active');
-        
+
         // Get the search term
         let searchTerm = $(this).val().toLowerCase(); // Convert input to lowercase for case-insensitive matching
         filterCars(searchTerm);  // Call the function to filter cars based on the search term
@@ -297,7 +297,7 @@ function compareVehicle() {
         }
     };
 
-    // Function to add animated spec progress bars
+    // Function to add the animated specification progress bars
     function addSpecBars(card, car) {
         // Calculate percentage values
         const speedPercentage = ((car.speed / 250) * 100).toFixed(2);
@@ -385,7 +385,7 @@ function compareVehicle() {
             else if (index === 4) percentage = pricePercentage;
             else if (index === 5) percentage = overallRating; 
     
-            // Animate to the desired percentage over 0.5 seconds
+            // Animate progress bars to the desired percentage over 0.5 seconds
             $(this).animate({ width: percentage + '%' }, 500);
         });
     }
@@ -403,22 +403,6 @@ function compareVehicle() {
         
         // Rating will be between 0 and 100
         return rating; 
-    }
-
-    // Function to animate progress bars
-    function animateProgressBars() {
-        $(".progress-bar").each(function() {
-            // Get the target width from the element's current inline style
-            const targetWidth = $(this).attr("style").match(/width:\s?(\d+)%/)[1];
-            
-            // Reset the width to 0 for animation effect
-            $(this).css("width", "0");
-            
-            // Animate to the target width
-            setTimeout(() => {
-                $(this).css("width", targetWidth + "%");
-            }, 100); // Small delay to ensure the animation is visible
-        });
     }
 
     // Code for clicking Compare button
@@ -560,9 +544,6 @@ function compareVehicle() {
             $('#historyList').append(historyItem); // Add new history without replacing previous entries
         }
     });
-
-    // Trigger animation on page load
-    animateProgressBars();
 }
 
 // ---------------------------------------------------------
