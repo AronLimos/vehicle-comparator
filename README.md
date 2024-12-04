@@ -8,3 +8,26 @@ Choosing the right vehicle has become challenging for potential buyers due to th
 - AronLimos
 - kianaaxd
 
+## Version History
+
+v1.0
+   - Added Interactive Navigation Bar
+   - Added Vehicle Showcase with Effects 
+
+v2.0
+   - Added Vehicle Search & Filter
+   - Added Vehicle Side-by-side Comparison
+   - Added Comparison History
+
+v2.1
+   - Updated comparison to raw values
+   - Refactored code
+   - Fixed card effects
+   - Fixed bugs
+
+v2.2
+   - Updated default search to all cars
+   - Refactored code
+
+v2.5
+   - Refactored code
